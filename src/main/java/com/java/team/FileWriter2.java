@@ -22,7 +22,7 @@ public class FileWriter2 {
      **/
     public FileWriter2(File file) throws IOException {
 
-        file = new File("C:\\javademos\\FilesNewFiles\\sadeceHazirDosya.txt");
+        file = new File("C:\\javademos\\FilesNewFiles\\file.txt");
         this.file = file;
         if (!this.file.exists()) {
             this.fileWriter = new FileWriter(this.file);
@@ -43,7 +43,7 @@ public class FileWriter2 {
      **/
     public FileWriter2(File file, boolean append) throws IOException {
 
-        this.file =new File("C:\\javademos\\FilesNewFiles\\hazirDosyaBoolean.txt");
+        this.file =new File("C:\\javademos\\FilesNewFiles\\fileboolean.txt");
         if (!this.file.exists()) {
             System.out.println("File is created");
         } else {
@@ -82,7 +82,7 @@ public class FileWriter2 {
             fileWriter = new FileWriter(this.file, true);
         } else if (append = false) {
             System.out.println("Not Appendable file!!");
-            fileWriter = new FileWriter(this.file, false);
+            this.fileWriter = new FileWriter(this.file, false);
         }
 
     }
